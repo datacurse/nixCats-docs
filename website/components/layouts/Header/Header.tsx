@@ -71,10 +71,9 @@ export function NavPopover({
             </svg>
           </button>
           <ul className="space-y-6">
-            <NavItems />
             <li>
               <a
-                href="https://github.com/pmndrs/valtio"
+                href="https://github.com/BirdeeHub/nixCats-nvim"
                 className="hover:text-sky-500 dark:hover:text-sky-400"
               >
                 GitHub
@@ -87,18 +86,6 @@ export function NavPopover({
         </div>
       </Dialog>
     </div>
-  )
-}
-
-export function NavItems() {
-  return (
-    <>
-      <li>
-        <Link href="/introduction/getting-started">
-          <a className="hover:text-sky-500 dark:hover:text-sky-400">Docs</a>
-        </Link>
-      </li>
-    </>
   )
 }
 
@@ -171,10 +158,9 @@ export default function Header({
               <div className="relative hidden lg:flex items-center ml-auto">
                 <nav className="text-sm leading-6 font-semibold text-gray-700 dark:text-gray-200">
                   <ul className="flex space-x-8">
-                    <NavItems />
                   </ul>
                 </nav>
-                <div className="flex items-center border-l border-gray-200 ml-6 pl-6 dark:border-gray-800">
+                <div className="flex items-center ml-6 pl-6">
                   <ToggleTheme />
                   <a
                     href="https://github.com/pmndrs/valtio"
