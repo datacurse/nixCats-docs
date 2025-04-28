@@ -6,8 +6,16 @@ module.exports = {
       {
         source: '/',
         destination: '/introduction/what-is-nixcats',
-        permanent: true,
+        permanent: false,
       },
     ]
   },
+  async rewrites() {
+    return [
+      {
+        source: '/docs/:path*',
+        destination: '/:path*',
+      }
+    ]
+  }
 }
